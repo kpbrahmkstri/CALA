@@ -1,0 +1,25 @@
+{
+  "last_7_days": [
+    {
+      "date": "2025-07-01",
+      "mood": "stressed"
+    },
+    {
+      "date": "2025-07-02",
+      "mood": "tired"
+    },
+    {
+      "date": "2025-07-03",
+      "mood": "neutral"
+    },
+    {
+      "date": "2025-07-11",
+      "mood": "stressed"
+    },
+    {
+      "date": "2025-07-11",
+      "mood": "tired"
+    }
+  ],
+  "trend": "neutral"
+}
