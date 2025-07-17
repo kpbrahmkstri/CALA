@@ -1,9 +1,18 @@
 {
   "today": {
     "meetings": [
-      {"time": "10:00 AM", "title": "Team Sync"},
-      {"time": "2:00 PM", "title": "Project Review"}
-    ],
-    "free_blocks": ["12:00 PM – 2:00 PM", "4:00 PM – 6:00 PM"]
+      {
+        "time": "2025-07-16T10:00:00-07:00",
+        "title": "team meeting"
+      },
+      {
+        "time": "2025-07-16T14:00:00-07:00",
+        "title": "sync up"
+      },
+      {
+        "time": "2025-07-16T16:00:00-07:00",
+        "title": "doc appointment"
+      }
+    ]
   }
 }

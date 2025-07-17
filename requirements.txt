@@ -2,3 +2,7 @@ openai>=1.0.0
 python-dotenv
 pydantic
 streamlit
+requests
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib

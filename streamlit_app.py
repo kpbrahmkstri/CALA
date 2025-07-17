@@ -1,9 +1,14 @@
+from dotenv import load_dotenv
+load_dotenv()
 import streamlit as st
 from app.context_loader import build_combined_context
 from app.prompt_builder import build_prompt
 from app.agent import ask_openai
+from app.weather_fetcher import fetch_weather
+from app.calendar_fetcher import fetch_calendar_events
 import json
 from datetime import date
+
 
 
 st.set_page_config(page_title="CALA Assistant", layout="centered")
@@ -48,6 +53,17 @@ if st.button("Log Mood"):
         json.dump(mood_data, f, indent=2)
 
     st.success(f"Mood logged as '{mood_value}' for {today_str}")
+
+calendar_data = fetch_calendar_events()  # Now guaranteed to return events
+
+with open("contexts/calendar_context.json", "w") as f:
+    json.dump(calendar_data, f, indent=2)
+
+weather_context_path = "contexts/weather_context.json"
+
+weather_data = fetch_weather("San Francisco")  # or make location dynamic
+with open(weather_context_path, "w") as f:
+    json.dump(weather_data, f, indent=2)
 
 # Input field
 user_query = st.text_input("🗨️ Ask CALA something:", placeholder="e.g., How should I plan my day?")
