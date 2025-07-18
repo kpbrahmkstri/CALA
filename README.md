@@ -16,9 +16,9 @@ CALA is an intelligent, context-aware AI life assistant built using OpenAI model
 
 ## ⚙️ Setup Instructions
 
+```bash
 1. Clone the repo
 
-```bash
 git clone https://github.com/kpbrahmkstri/CALA.git
 
 2. Create and activate virtual environment
