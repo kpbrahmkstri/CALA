@@ -11,7 +11,6 @@ This project showcases real-world MCP usage — modular context construction, mu
 -  **Modular Context Design** — loads user profile, mood logs, schedule, and weather as structured MCP context files.
 -  **Personalized Prompting** — dynamically adapts advice based on who you are and how you feel.
 -  **LLM-Powered Agent** — uses OpenAI's GPT-4 to generate wellness recommendations, plans, and reflections.
--  **Easy to Extend** — plug in new context layers (e.g., fitness, location, journaling) without changing logic.
 
   ![CALA Architecture](CALA_architecture.png)
 
