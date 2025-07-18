@@ -30,14 +30,12 @@ source venv/bin/activate  # Windows: venv\Scripts\activate
 
 pip install -r requirements.txt
 
-
 4. Set up your OpenAI key
 Create a .env file in the root directory:
 
 OPENAI_API_KEY=your-openai-api-key-here
 
-
-🧪 Run the App
+5. Run the App
 streamlit run streamlit_app.py
 
 
